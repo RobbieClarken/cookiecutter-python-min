@@ -1,7 +1,7 @@
 from setuptools import setup
 import re
 
-with open('{{app_name}}/__init__.py', 'r') as f:
+with open('{{cookiecutter.app_name}}/__init__.py', 'r') as f:
     version = re.search(r"__version__ = '(.*)'", f.read()).group(1)
 
 setup(
